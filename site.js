@@ -232,3 +232,18 @@
   }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
   list.forEach(function (el) { io.observe(el); });
 })();
+
+
+/* Cambio pagina: si riparte sempre dall'alto (salvo link a un'ancora) */
+(function () {
+  var top = function () {
+    if (location.hash && document.getElementById(location.hash.slice(1))) return;
+    var d = document.documentElement, b = d.style.scrollBehavior;
+    d.style.scrollBehavior = 'auto';
+    window.scrollTo(0, 0); d.scrollTop = 0; document.body.scrollTop = 0;
+    d.style.scrollBehavior = b;
+  };
+  top();
+  window.addEventListener('pageshow', top);
+  window.addEventListener('load', top);
+})();
