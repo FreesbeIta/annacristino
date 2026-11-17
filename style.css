@@ -414,6 +414,16 @@ p{margin:0}
 .tile .im{transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .5s cubic-bezier(.2,.7,.2,1)}
 .tile:hover .im{transition-duration:.12s}
 
+
+/* pagine legali */
+.legal{max-width:760px}
+.legal ul{margin:0 0 1.15em;padding-left:1.2em;max-width:64ch}
+.legal li{margin-bottom:.55em;font-size:1.03rem;line-height:1.8}
+.legal ul.plain{list-style:none;padding:20px 24px;border-left:3px solid var(--red);background:rgba(11,11,12,.04)}
+.legal .upd{margin-top:48px;font-size:.85rem;color:#6d6a64}
+.tbd{background:rgba(230,179,48,.38);color:inherit;padding:.05em .35em}
+.flegal{display:flex;gap:22px}
+
 @media(max-width:960px){
   .hero-stage{width:calc(68% + 24px)}
   .hero-ui{left:var(--gutter);right:var(--gutter);bottom:26px}
