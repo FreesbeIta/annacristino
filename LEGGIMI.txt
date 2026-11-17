@@ -1,0 +1,9 @@
+SITO ART GALLERY ANNA CRISTINO – CUORE E ARTE
+
+Installazione su Hostinger:
+1. hPanel > File Manager > public_html
+2. Carica tutto il contenuto di questa cartella (anche il file nascosto .htaccess)
+3. Attiva SSL (Let's Encrypt) in hPanel e poi decommenta le 3 righe HTTPS nel .htaccess
+
+Prima di pubblicare, comunicare il dominio: serve per canonical, sitemap.xml,
+Open Graph (anteprima social) e dati strutturati con URL assoluti.
