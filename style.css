@@ -424,6 +424,14 @@ p{margin:0}
 .tbd{background:rgba(230,179,48,.38);color:inherit;padding:.05em .35em}
 .flegal{display:flex;gap:22px}
 
+
+/* copertina evento nell'hero */
+.hs.ev{background:#0B0B0C}
+.hs.ev img{object-fit:contain;object-position:right center;padding:7% 48px 7% 0;animation:none!important}
+.hero-stage:has(.hs.ev.on):after{opacity:0}
+.hero:has(.hs.ev.on) .hero-cap{display:none}
+.ev-poster{display:none}
+
 @media(max-width:960px){
   .hero-stage{width:calc(68% + 24px)}
   .hero-ui{left:var(--gutter);right:var(--gutter);bottom:26px}
@@ -432,6 +440,9 @@ p{margin:0}
 }
 @media(max-width:650px){
   .hero-stage{top:0;right:0;width:100%;height:100%;opacity:.74;transform:none!important}
+  .hs.ev img{object-fit:cover;object-position:left center;padding:0;width:230%;max-width:none}
+  .ev-poster{display:block;background:#0B0B0C;padding:0 var(--gutter) 28px}
+  .ev-poster img{display:block;width:100%;height:auto}
   .hero-ui{left:var(--gutter);right:var(--gutter);bottom:24px;gap:12px}
   .scroll-cue{display:none}
   .hm-n{font-size:1.5rem}
